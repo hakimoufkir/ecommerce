@@ -5,7 +5,7 @@ function User() {
   return (
     <>    
          
-        <MDBNavbarLink href='#'><MDBIcon fas icon="user-circle" /></MDBNavbarLink>
+        <MDBNavbarLink href='#'><MDBIcon fas icon="user-alt" /></MDBNavbarLink>
     
     </>
   )

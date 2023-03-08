@@ -8,12 +8,12 @@ import {
   MDBNavbarNav,
   MDBNavbarItem,
   MDBNavbarLink,
-  MDBBtn,
   MDBDropdown,
   MDBDropdownToggle,
   MDBDropdownMenu,
   MDBDropdownItem,
   MDBCollapse,
+  // MDBBtn,
 } from 'mdb-react-ui-kit';
 import Panier from './Panier';
 import User from './User';
@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <MDBNavbar expand='lg' light bgColor='light'>
       <MDBContainer fluid>
-        <MDBNavbarBrand href='#'>Brand</MDBNavbarBrand>
+        <MDBNavbarBrand href='#'>E-Commerce</MDBNavbarBrand>
 
         <MDBNavbarToggler
           aria-controls='navbarSupportedContent'
@@ -42,8 +42,18 @@ export default function Navbar() {
                 Home
               </MDBNavbarLink>
             </MDBNavbarItem>
-            
             <MDBNavbarItem>
+              <MDBNavbarLink active aria-current='page' href='#'>
+                Products
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <MDBNavbarLink active aria-current='page' href='#'>
+                Idk
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+            
+            {/* <MDBNavbarItem>
               <MDBDropdown>
                 <MDBDropdownToggle tag='a' className='nav-link' role='button'>
                   Dropdown
@@ -54,17 +64,21 @@ export default function Navbar() {
                   <MDBDropdownItem link>Something else here</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
-            </MDBNavbarItem>
-          </MDBNavbarNav>
-          
-          {/* Panier Component */}
-            <Panier/>
-            <User/>
-            
-          <form className='d-flex input-group w-auto'>
+            </MDBNavbarItem> */}
+
+            {/* <MDBNavbarNav>
+            <MDBNavbarItem>
+            <form className='d-flex input-group w-auto'>
             <input type='search' className='form-control' placeholder='Type query' aria-label='Search' />
             <MDBBtn color='primary'>Search</MDBBtn>
           </form>
+          </MDBNavbarItem>
+          </MDBNavbarNav> */}
+
+
+          </MDBNavbarNav>                                        
+              <Panier/>
+              <User/>          
         </MDBCollapse>
       </MDBContainer>
     </MDBNavbar>
